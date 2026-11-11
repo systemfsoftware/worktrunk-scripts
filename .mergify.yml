@@ -1,7 +1,7 @@
 # Mergify: policy lives in systemfsoftware/.github (.mergify.yml). This file only names this repo's CI checks.
 extends: .github
 queue_rules:
-    # Checked on the PR itself before it enters the queue.
+  # Checked on the PR itself before it enters the queue.
   - name: subtree
     merge_method: merge
     queue_conditions:

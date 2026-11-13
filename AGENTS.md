@@ -15,6 +15,7 @@ Load docs on-demand when triggers fire; do not perform eager multi-spec reads at
 | Doc                                                     | Trigger                                                                            |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | `CONSTITUTION.md`                                       | architecture changes, rule authoring, or design disputes                           |
+| `repos/constitution/ENFORCEMENT.md` | building or changing an instrument that grades work (lint gates, stream rules, CI checks, thresholds, rubrics, advisors); situational read only |
 | `CONSTITUTION-ARTICLES.md`                              | editing source files (pure core, types, boundaries, testing)                       |
 | `docs/solutions/tooling/bash-to-deno-port-semantics.md` | modifying path mapping, git command wrappers, or cross-platform Deno CLI semantics |
 | `subtrees.toml`                                         | updating or adding vendored git subtrees                                           |

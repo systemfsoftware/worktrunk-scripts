@@ -13,7 +13,7 @@ Deno hooks for [worktrunk](https://github.com/max-sixty/worktrunk). A new `git w
 | `post-switch.ts`    | after switching into a worktree | Runs the post-switch step for that worktree.                                                                                                                        |
 | `pre-merge.ts`      | before a merge                  | Removes the worktree's symlinked entries, then stages the rest with `git add -A`.                                                                                   |
 
-Two more scripts are standalone and can be wired the same way: `install-deps.ts` installs dependencies for the package manager it recognizes, and `generate-artifacts.ts` runs the build system it recognizes. Each skips when it recognizes none. `worktree-to-relative.ts` and `convert-to-relative-paths.ts` rewrite existing worktrees' `.git` paths to relative ones, once, and are idempotent.
+Three more scripts are standalone and can be wired the same way: `install-deps.ts` installs dependencies for the package manager it recognizes, `run-package-script.ts` runs one named `package.json` script through the lockfile's package manager, and `generate-artifacts.ts` runs the build system it recognizes. Each skips when it recognizes none. A repo sets the install flags for `install-deps.ts` in its `package.json`, under `"worktrunk": { "installArgs": [...] }`. `run-package-script.ts <worktree_path> <script> [--best-effort]` skips when the repo's `package.json` has no such script, and `--best-effort` logs a failing script without failing the hook. `worktree-to-relative.ts` and `convert-to-relative-paths.ts` rewrite existing worktrees' `.git` paths to relative ones, once, and are idempotent.
 
 ## Use it
 

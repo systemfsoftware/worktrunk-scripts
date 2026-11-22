@@ -19,6 +19,8 @@ startup.
 | Doc                                                                      | Trigger                                                                              |
 | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | `repos/constitution/CODING_STANDARDS.md`, `repos/constitution/REVIEW.md` | you plan, write or review any change; before you propose a test, a check or a design |
+| `repos/constitution/GRADERS.md`                                          | you build or change a check: a lint rule, CI job, hook, threshold or rubric          |
+| `repos/constitution/WORKING.md`                                          | always; `CLAUDE.md` imports it                                                       |
 | `docs/solutions/tooling/bash-to-deno-port-semantics.md`                  | modifying path mapping, git command wrappers, or cross-platform Deno CLI semantics   |
 | `subtrees.toml`                                                          | updating or adding vendored git subtrees                                             |
 

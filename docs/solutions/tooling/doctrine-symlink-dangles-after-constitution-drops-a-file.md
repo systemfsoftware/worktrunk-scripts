@@ -21,7 +21,7 @@ The constitution removed `CONSTITUTION-ARTICLES.md` (systemfsoftware/constitutio
 
 ## Fix
 
-Delete the symlink and its AGENTS.md routing row. `CONSTITUTION.md` is the only root doctrine file.
+Delete the symlink and its AGENTS.md routing row. `CODING_STANDARDS.md` is the only root doctrine file.
 
 ## Prevention
 

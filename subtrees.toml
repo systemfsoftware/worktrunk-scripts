@@ -2,4 +2,4 @@
 name = "constitution"
 url = "https://github.com/systemfsoftware/constitution"
 branch = "main"
-description = "Shared engineering laws for clean code, testing, and project organization at System F Software"
+description = "The organization's shared CODING_STANDARDS.md and REVIEW.md, included from REVIEW.md"
